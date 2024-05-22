@@ -5,8 +5,8 @@ with the model through text input. This application uses Vertex AI for the model
 # Features
 - Chat Interface: Users interact with the model through typed messages in the chat box. Chat history is maintained,
 displaying both the user's and model's messages.
-- Personalized Greetings: Users can input their name to have a personalized greeting. If no name is input, ReX's
-stlye of speaking changes.
+- Personalized Greetings: Users can input their name to have a personalized greeting. If the user does not input a
+name, ReX's style of speaking changes to a pirate.
 
 # Setup
 1. Clone the repository
