@@ -10,9 +10,9 @@ displaying both the user's and model's messages.
 # Setup
 1. Clone the repository
 2. Install dependencies in requirements.txt
-3. Run the Streamlit app : streamlit run gemini_explorer.py
 
 # Usage
 1. Run the Streamlit app
+    - streamlit run gemini_explorer.py
 2. Enter name (optional)
 3. Press "Ready to chat"
