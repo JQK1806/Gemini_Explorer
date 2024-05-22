@@ -1,4 +1,5 @@
 import vertexai
+import time
 import streamlit as st
 from vertexai.preview import generative_models
 from vertexai.preview.generative_models import GenerativeModel, Part, Content, ChatSession
@@ -78,8 +79,15 @@ if len(st.session_state.messages) == 0:
 # For capture user input
 query = st.chat_input("Gemini Explorer")
 
+# Function to show "ReX is typing" indicator
+def typing_indicator():
+    with st.empty():
+        st.text("ReX is typing...")
+        time.sleep(1)
+        st.empty()
+
 if query:
     with st.chat_message("user"):
         st.markdown(query)
+    typing_indicator()
     llm_function(chat, query)
-
